@@ -1,5 +1,5 @@
 import React from 'react'
-import PropTypes from 'prop-types'
+import MyButton from './UI/button/MyButton'
 
 function PostItem(props) {
     return (
@@ -11,12 +11,10 @@ function PostItem(props) {
                 </div>
             </div>
             <div className="post__btns">
-                <button>Удалить</button>
+                <MyButton onClick={() => props.remove(props.post)}>Удалить</MyButton>
             </div>
         </div>
     )
 }
-
-PostItem.propTypes = {}
 
 export default PostItem
