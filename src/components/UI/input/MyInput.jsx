@@ -7,4 +7,4 @@ const MyInput = React.forwardRef((props, ref) => {
   )
 })
 
-export default MyInput;
+export default MyInput
