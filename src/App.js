@@ -4,17 +4,13 @@ import Posts from './pages/Posts';
 import About from './pages/About';
 import Navbar from './components/UI/navbar/Navbar';
 import Error from './pages/Error';
+import AppRouter from './components/AppRouter';
 
 function App() {
 	return (
 		<BrowserRouter>
 			<Navbar/>
-			<Routes>
-				<Route path="/about" Component={About}/>
-				<Route path="/posts" Component={Posts}/>
-				<Route path="/error" Component={Error}/>
-				<Route path='/*' element={<Navigate to="/error" />} />
-			</Routes>
+			<AppRouter/>
 		</BrowserRouter>
 	)
 }
